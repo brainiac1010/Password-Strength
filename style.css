@@ -15,3 +15,45 @@
     justify-content: center;
     align-items: center;
 }
+
+.inputbox {
+    width: 400;
+    max-width: 90%;
+    position: relative;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    color: #fff;
+    background: transparent;
+}
+
+.btn {
+    background: transparent;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+.btn img {
+    width: 35px;
+}
+#msg{
+    position: absolute;
+    bottom:-30px ;
+    color: #fff;
+    font-size: 15px;
+
+}
+::placeholder{
+    font-size: 15px;
+}
