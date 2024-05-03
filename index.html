@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <div class="inputbox">
-            <input type="password" id="password" placeholder="password">
+            <input type="text" id="password" placeholder="password">
             <button type="submit" class="btn"> <img src="./arrow.png" alt=""></button>
             <p id="msg">password is <span id="Strength"></span></p>
         </div>
@@ -33,15 +33,18 @@
             if (pass.value.length < 4) {
                 str.innerHTML = "weak";
                 pass.style.borderColor = "red"
+                msg.style.color = "red"
             }
             else if (pass.value.length >= 4 && pass.value.length < 8) {
 
                 str.innerHTML = "medium";
                 pass.style.borderColor = "orange"
+                msg.style.color = "orange"
             }
             else if (pass.value.length >= 8) {
                 str.innerHTML = "Strong";
                 pass.style.borderColor = "green"
+                msg.style.color = "green"
             }
         })
 
